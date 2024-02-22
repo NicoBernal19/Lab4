@@ -18,6 +18,9 @@ public class OriginalScore implements GameScore {
 	 * 							INCORRECT_LETTERS_INVALID, si el numero de letras incorrectas es negativo.
 	 */
 	public int calculateScore(int correctCount, int incorrectCount) throws HangmanException {
-		return 1;
+		if (correctCount < 0) throw new HangmanException(HangmanException.CORRECT_LETTERS_INVALID);
+		if (incorrectCount < 0) throw new HangmanException(HangmanException.INCORRECT_LETTERS_INVALID);
+		int result = 100 - incorrectCount * 10;
+		return (result >= 0 ? result : 0);
 	}
 }

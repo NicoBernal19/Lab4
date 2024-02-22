@@ -18,6 +18,9 @@ public class PowerScore implements GameScore {
 	 * 							INCORRECT_LETTERS_INVALID, si el numero de letras incorrectas es negativo.
 	 */
 	public int calculateScore(int correctCount, int incorrectCount) throws HangmanException {
-		return 1;
+		if (correctCount < 0) throw new HangmanException(HangmanException.CORRECT_LETTERS_INVALID);
+		if (incorrectCount < 0) throw new HangmanException(HangmanException.INCORRECT_LETTERS_INVALID);
+		int result = (int) (Math.pow(5, correctCount) - incorrectCount * 8);
+		return (result >= 0 ? (result <= 500 ? result : 500 ) : 0);
 	}
 }

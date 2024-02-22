@@ -51,7 +51,7 @@ public class GameScoreTest {
     public void validateItDoesNotThrowsAnExceptionWhenNumberOfCorrectLettersIsZeroBonusScore() {
     	try {
     		BonusScore score = new BonusScore();
-			assertEquals(score.calculateScore(0, 5), -20);
+			assertEquals(score.calculateScore(0, 5), 0);
 		} catch (HangmanException e) {
 			fail("Lanzo una excepcion");
 		} 
@@ -61,7 +61,7 @@ public class GameScoreTest {
     public void validateItDoesNotThrowsAnExceptionWhenNumberOfIncorrectLettersIsZeroBonusScore() {
     	try {
     		BonusScore score = new BonusScore();
-			assertEquals(score.calculateScore(5, 0), 80);
+			assertEquals(score.calculateScore(5, 0), 50);
 		} catch (HangmanException e) {
 			fail("Lanzo una excepcion");
 		} 
@@ -182,7 +182,7 @@ public class GameScoreTest {
     public void validateItDoesNotThrowsAnExceptionWhenNumberOfIncorrectLettersIsZeroPowerScore() {
     	try {
     		PowerScore score = new PowerScore();
-			assertEquals(score.calculateScore(5, 0), 125);
+			assertEquals(score.calculateScore(5, 0), 500);
 		} catch (HangmanException e) {
 			fail("Lanzo una excepcion");
 		} 
