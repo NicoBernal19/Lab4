@@ -35,6 +35,8 @@ public class GameModel {
     private Scanner scan;
     private String randomWord;
     private char[] randomWordCharArray;
+    
+    private GameScore score;
 
     public GameModel(HangmanDictionary dictionary) {
         //this.dictionary = new EnglishDictionaryDataSource();
