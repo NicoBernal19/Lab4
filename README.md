@@ -43,7 +43,7 @@ principio de inversión de dependencias:
 
 2. A partir del código existente, implemente sólo los cascarones del
    modelo antes indicado.
-   <img width="588" alt="imagen" src="https://github.com/NicoBernal19/Lab4/blob/master/img/img1.jpg">
+   ![imagen](img/img1.jpg)
 
 4. Haga la especificación de los métodos calculateScore (de las tres
    variantes de GameScore), a partir de las especificaciones
