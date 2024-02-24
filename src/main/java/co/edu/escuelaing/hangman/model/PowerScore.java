@@ -1,10 +1,12 @@
 package co.edu.escuelaing.hangman.model;
+import org.springframework.stereotype.Component;
 
 /**
  * Puntaje del juego que inicia con 0 puntos, la i-esima letra correcta se bonifica con 5^i puntos, se penaliza
  * con 8 puntos cada letra incorrecta y el puntaje minimo es 0. Si sobrepasa 500 puntos, el puntaje es 500 siempre.
  * @author Nicolas Bernal
  */
+@Component("powerScore")
 public class PowerScore implements GameScore {
 
 	/**

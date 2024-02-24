@@ -1,10 +1,12 @@
 package co.edu.escuelaing.hangman.model;
+import org.springframework.stereotype.Component;
 
 /**
  * Puntaje del juego que inicia con 100 puntos, las letras correctas no suman puntos, se penaliza con 10 puntos por cada letra incorrecta y el puntaje 
  * minimo es 0.
  * @author Nicolas Bernal
  */
+@Component("originalScore")
 public class OriginalScore implements GameScore {
 
 	/**
