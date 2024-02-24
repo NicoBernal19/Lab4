@@ -96,7 +96,11 @@ principio de inversión de dependencias:
    Asegúrese que todas las pruebas unitarias creadas en los puntos anteriores
    se ejecutan satisfactoriamente.
 
-18. Al finalizar haga un nuevo commit:
+   ![imagen](img/img15.jpg)
+   ![imagen](img/img16.jpg)
+   ![imagen](img/img17.jpg)
+
+19. Al finalizar haga un nuevo commit:
 
     ```sh		
     git add .			
@@ -105,7 +109,7 @@ principio de inversión de dependencias:
 
     ![imagen](img/img11.jpg)
 
-19. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
+20. Para sincronizar el avance en el respositorio y NO PERDER el trabajo, use
     el comando de GIT para enviar los cambios:
 
     ```sh
